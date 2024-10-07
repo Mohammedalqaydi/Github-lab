@@ -7,6 +7,6 @@ jobs:
   print_branch_name:
     runs-on: ubuntu-latest
     steps:
-      - name: Print Branch Name
+      - name: Print branch Name
         run: echo "Branch Name: $github.ref"
         
