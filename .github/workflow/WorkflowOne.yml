@@ -1,4 +1,6 @@
 name:PrintBranchName
+env:
+  name: github.ref
 on:
   push:
     branches:
@@ -8,5 +10,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: print branch Name
-        run: echo "Branch Name: $github.ref"
+        run: echo "Branch Name:$name"
         
