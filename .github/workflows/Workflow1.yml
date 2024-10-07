@@ -1,14 +1,14 @@
-name:PrintBranchName
+name: PrintBranchName
 env:
   name: ${{ github.ref }}
 on:
   push:
     branches:
       - 'main'
+
 jobs:
   print_branch_name:
     runs-on: ubuntu-latest
     steps:
-      - name: print branch Name
-        run: echo "Branch Name:$name"
-        
+      - name: Print Branch Name
+        run: echo "Branch Name: $name"
