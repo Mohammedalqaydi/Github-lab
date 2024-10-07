@@ -1,6 +1,6 @@
 name:PrintBranchName
 env:
-  name: github.ref
+  name: ${{ github.ref }}
 on:
   push:
     branches:
